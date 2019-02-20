@@ -37,7 +37,7 @@ void Data::avancarData(){
 			cout<<"Data Inexistente!\n";
 		}else{
 			this->dia = 1;
-			cout<< this->dia << "/ " << this->mes+1 << " / " << this->ano <<endl";
+			cout<< this->dia << "/ " << this->mes+1 << " / " << this->ano << endl;
 		}
 	}else if(this->mes==2){
 		if(this->dia!=28 && this->dia !=29){
@@ -46,9 +46,9 @@ void Data::avancarData(){
 			if(this->mes==2 && this->ano%4==0){
 				if(this->dia==29){
 					this->dia = 1;
-					cout<<"01 / " << this->mes+1 << " / "<<this->ano<<"\n";
+					cout<<"01 / " << this->mes+1 << " / "<<this->ano<< endl;
 				}else{
-					cout<< this->dia+1 << "/" << this->mes << "/" << this->ano <<"\n";
+					cout<< this->dia+1 << "/" << this->mes << "/" << this->ano << endl;
 				}
 			}
 
@@ -56,9 +56,9 @@ void Data::avancarData(){
 	}else if(this->mes==12 && this->dia==31){
 		this->dia = 1;
 		this->mes = 1;
-		cout << this->dia << "/" << this->mes << "/" <<this->ano+1<<"\n";
+		cout << this->dia << "/" << this->mes << "/" <<this->ano+1<< endl;
 	}else{
-		cout<<dia+1 <<" / "<<mes<<" / "<<ano<<"\n";
+		cout<<dia+1 <<" / "<<mes<<" / "<<ano<< endl;
 	}
 }
 
